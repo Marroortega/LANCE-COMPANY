@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LANCE AI — Integración de IA Empresarial</title>
+  <meta name="description" content="LANCE AI integra IA en tu empresa: chatbots de WhatsApp, automatizaciones y paneles ejecutivos. Diseño minimal, enfoque empresarial." />
+  <meta property="og:title" content="LANCE AI — IA Empresarial" />
+  <meta property="og:description" content="Chatbots de WhatsApp, automatizaciones y soluciones de IA para empresas." />
+  <meta property="og:url" content="https://lancecompany.com.mx" />
+  <meta name="theme-color" content="#000000" />
+  <!-- Tailwind CSS CDN (sin build) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Tipografía sobria tipo "Apple" (sistema) */
+    html { scroll-behavior:smooth; }
+    body { font-feature-settings:"ss01" on, "ss02" on; }
+    /* Sombra dura minimal */
+    .shadow-hard { box-shadow: 8px 8px 0 0 #000; }
+  </style>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><path d='M24 2c5 6 10 12 10 18 0 6-4 10-10 10S14 26 14 20C14 14 19 8 24 2Z'/><rect x='22' y='18' width='4' height='26' rx='2'/></svg>">
+</head>
+<body class="min-h-screen bg-white text-black antialiased">
+  <!-- Configuración rápida -->
+  <script>
+    const SITE_URL = "https://lancecompany.com.mx";
+    const WHATSAPP_LINK = "https://wa.me/528116853251?text=Hola%20LANCE%20AI,%20quiero%20integrar%20IA%20en%20mi%20empresa";
+  </script>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 w-full border-b border-black/10 bg-white/80 backdrop-blur">
+    <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <!-- Logo (lanza + texto) -->
+        <svg viewBox="0 0 48 48" class="h-7 w-auto fill-black" aria-hidden>
+          <path d="M24 2c5 6 10 12 10 18 0 6-4 10-10 10S14 26 14 20C14 14 19 8 24 2Z"/>
+          <rect x="22" y="18" width="4" height="26" rx="2" />
+        </svg>
+        <span class="text-lg font-semibold tracking-tight">LANCE AI</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm">
+        <a href="#features" class="hover:opacity-70 transition-opacity">Servicios</a>
+        <a href="#usecases" class="hover:opacity-70 transition-opacity">Casos de uso</a>
+        <a href="#pricing" class="hover:opacity-70 transition-opacity">Planes</a>
+        <a href="#contact" class="hover:opacity-70 transition-opacity">Contacto</a>
+      </nav>
+      <a href="#contact" class="inline-flex items-center gap-2 rounded-2xl border border-black px-4 py-2 text-sm hover:-translate-y-0.5 transition-all hover:shadow-hard">Agenda una demo</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="mx-auto max-w-6xl px-4 pt-16 pb-20">
+    <div class="grid items-center gap-10 md:grid-cols-2">
+      <div>
+        <div class="flex items-center gap-3">
+          <svg viewBox="0 0 48 48" class="h-10 w-auto fill-black" aria-hidden>
+            <path d="M24 2c5 6 10 12 10 18 0 6-4 10-10 10S14 26 14 20C14 14 19 8 24 2Z"/>
+            <rect x="22" y="18" width="4" height="26" rx="2" />
+          </svg>
+          <span class="text-xl font-semibold tracking-tight">LANCE AI</span>
+        </div>
+        <h1 class="mt-6 text-4xl md:text-6xl font-semibold leading-tight tracking-tight">
+          Integración de IA empresarial<br />simple, segura y escalable.
+        </h1>
+        <p class="mt-6 text-lg text-black/70 max-w-xl">
+          Integramos IA en tu empresa (chatbots de WhatsApp, automatizaciones y paneles)
+          para optimizar procesos, reducir costos y acelerar decisiones.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="#contact" class="inline-flex justify-center rounded-2xl bg-black px-6 py-3 text-white hover:opacity-90 transition">Solicitar demo</a>
+          <a href="#features" class="inline-flex justify-center rounded-2xl border border-black px-6 py-3 hover:-translate-y-0.5 transition-all hover:shadow-hard">Ver servicios</a>
+          <a id="wa-cta" target="_blank" class="inline-flex justify-center rounded-2xl border border-black px-6 py-3 hover:-translate-y-0.5 transition-all hover:shadow-hard">WhatsApp</a>
+        </div>
+        <p class="mt-4 text-xs text-black/50">Integración sin fricción · Diseño minimal · Enfoque empresarial</p>
+      </div>
+      <div class="relative">
+        <div class="aspect-[4/3] w-full rounded-3xl border border-black/10 bg-gradient-to-br from-white to-black/5 shadow-[0_12px_40px_-20px_rgba(0,0,0,0.5)]"></div>
+        <div class="absolute -bottom-6 -right-6 hidden md:block rounded-3xl border border-black bg-white px-6 py-4 shadow-hard">
+          <p class="text-sm font-medium">Listo para empresas</p>
+          <p class="text-xs text-black/60">WhatsApp · Google Workspace · Make · API</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature strip -->
+  <div class="border-y border-black/10">
+    <div class="mx-auto max-w-6xl px-4 py-6 flex items-center justify-between gap-6 text-xs text-black/50 overflow-x-auto">
+      <span>Privacy-first</span>
+      <span>UX minimal</span>
+      <span>Automatización</span>
+      <span>Integraciones (Google · WhatsApp · Make)</span>
+      <span>Soporte humano</span>
+    </div>
+  </div>
+
+  <!-- Servicios -->
+  <section id="features" class="mx-auto max-w-6xl px-4 py-20">
+    <h2 class="text-3xl md:text-4xl font-semibold">Soluciones empresariales de IA</h2>
+    <p class="mt-3 text-black/70 max-w-2xl">Funcionalidades clave para empezar hoy y escalar mañana.</p>
+    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="rounded-3xl border border-black/10 p-6 hover:-translate-y-0.5 transition-all hover:shadow-hard">
+        <h3 class="text-lg font-medium">Automatización sin fricción</h3>
+        <p class="mt-2 text-sm text-black/70">Workflows y RPA con IA: asignaciones, recordatorios, reportes y aprobaciones.</p>
+      </div>
+      <div class="rounded-3xl border border-black/10 p-6 hover:-translate-y-0.5 transition-all hover:shadow-hard">
+        <h3 class="text-lg font-medium">Chatbots de WhatsApp</h3>
+        <p class="mt-2 text-sm text-black/70">Atiende 24/7, captura leads y conecta con tus sistemas.</p>
+      </div>
+      <div class="rounded-3xl border border-black/10 p-6 hover:-translate-y-0.5 transition-all hover:shadow-hard">
+        <h3 class="text-lg font-medium">Integración con Google</h3>
+        <p class="mt-2 text-sm text-black/70">Gmail, Sheets, Drive y Calendar unidos a tus flujos.</p>
+      </div>
+      <div class="rounded-3xl border border-black/10 p-6 hover:-translate-y-0.5 transition-all hover:shadow-hard">
+        <h3 class="text-lg font-medium">Seguridad y control</h3>
+        <p class="mt-2 text-sm text-black/70">Accesos por rol, logs y buenas prácticas de privacidad.</p>
+      </div>
+      <div class="rounded-3xl border border-black/10 p-6 hover:-translate-y-0.5 transition-all hover:shadow-hard">
+        <h3 class="text-lg font-medium">Onboarding express</h3>
+        <p class="mt-2 text-sm text-black/70">De prueba a producción en semanas, no meses.</p>
+      </div>
+      <div class="rounded-3xl border border-black/10 p-6 hover:-translate-y-0.5 transition-all hover:shadow-hard">
+        <h3 class="text-lg font-medium">Paneles ejecutivos</h3>
+        <p class="mt-2 text-sm text-black/70">Decisiones con datos claros, en tiempo real.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Casos de uso -->
+  <section id="usecases" class="mx-auto max-w-6xl px-4 py-20 border-t border-black/10">
+    <h2 class="text-3xl md:text-4xl font-semibold">Casos de uso</h2>
+    <div class="mt-8 grid gap-6 md:grid-cols-3">
+      <div class="rounded-3xl border border-black/10 p-6"><h3 class="text-lg font-medium">Atención al cliente</h3><p class="mt-2 text-sm text-black/70">Chatbots que responden 24/7 y elevan tu experiencia de marca.</p></div>
+      <div class="rounded-3xl border border-black/10 p-6"><h3 class="text-lg font-medium">Operaciones</h3><p class="mt-2 text-sm text-black/70">Asignación de turnos, recordatorios, reportes y control de calidad.</p></div>
+      <div class="rounded-3xl border border-black/10 p-6"><h3 class="text-lg font-medium">Ventas & Marketing</h3><p class="mt-2 text-sm text-black/70">Generación de leads, mensajes personalizados y seguimiento automático.</p></div>
+    </div>
+  </section>
+
+  <!-- Precios -->
+  <section id="pricing" class="mx-auto max-w-6xl px-4 py-20 border-t border-black/10">
+    <h2 class="text-3xl md:text-4xl font-semibold">Precios simples</h2>
+    <p class="mt-3 text-black/70 max-w-2xl">Precios claros para iniciar rápido y crecer cuando lo requieras.</p>
+    <div class="mt-10 grid gap-6 md:grid-cols-3">
+      <div class="rounded-3xl border border-black/10 p-6 flex flex-col gap-4">
+        <div><h3 class="text-xl font-medium">Starter</h3><p class="mt-1 text-3xl font-semibold">$0</p></div>
+        <ul class="grid gap-2 text-sm text-black/70 list-disc pl-5">
+          <li>Demo guiada</li><li>Plantilla de chatbot</li><li>Soporte por email</li>
+        </ul>
+        <a href="#contact" class="mt-4 inline-flex justify-center rounded-2xl border border-black px-6 py-3 hover:-translate-y-0.5 transition-all hover:shadow-hard">Probar</a>
+      </div>
+      <div class="rounded-3xl border border-black p-6 flex flex-col gap-4 shadow-hard">
+        <div><h3 class="text-xl font-medium">Pro</h3><p class="mt-1 text-3xl font-semibold">$79/mes</p></div>
+        <ul class="grid gap-2 text-sm text-black/70 list-disc pl-5">
+          <li>Automatizaciones</li><li>Integración Google/WhatsApp</li><li>Panel de control</li>
+        </ul>
+        <a href="#contact" class="mt-4 inline-flex justify-center rounded-2xl bg-black px-6 py-3 text-white hover:opacity-90 transition">Empezar</a>
+      </div>
+      <div class="rounded-3xl border border-black/10 p-6 flex flex-col gap-4">
+        <div><h3 class="text-xl font-medium">Empresas</h3><p class="mt-1 text-3xl font-semibold">A medida</p></div>
+        <ul class="grid gap-2 text-sm text-black/70 list-disc pl-5">
+          <li>Agentes personalizados</li><li>Soporte dedicado</li><li>Acuerdos de seguridad</li>
+        </ul>
+        <a href="#contact" class="mt-4 inline-flex justify-center rounded-2xl border border-black px-6 py-3 hover:-translate-y-0.5 transition-all hover:shadow-hard">Solicitar llamada</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact" class="mx-auto max-w-3xl px-4 py-20 border-t border-black/10">
+    <h2 class="text-3xl md:text-4xl font-semibold">Hablemos</h2>
+    <p class="mt-3 text-black/70">Cuéntanos tu caso y agenda una demo. También puedes escribirnos por WhatsApp.</p>
+    <div class="mt-6">
+      <a id="wa-cta-2" target="_blank" class="inline-flex items-center justify-center rounded-2xl border border-black px-6 py-3 hover:-translate-y-0.5 transition-all hover:shadow-hard">WhatsApp inmediato</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-black/10">
+    <div class="mx-auto max-w-6xl px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <svg viewBox="0 0 48 48" class="h-5 w-auto fill-black" aria-hidden>
+          <path d="M24 2c5 6 10 12 10 18 0 6-4 10-10 10S14 26 14 20C14 14 19 8 24 2Z"/>
+          <rect x="22" y="18" width="4" height="26" rx="2" />
+        </svg>
+        <span class="text-sm">© <span id="year"></span> LANCE AI · <a href="https://lancecompany.com.mx" class="underline">lancecompany.com.mx</a></span>
+      </div>
+      <div class="flex items-center gap-6 text-sm text-black/60">
+        <a href="#" class="hover:opacity-70">Privacidad</a>
+        <a href="#" class="hover:opacity-70">Términos</a>
+        <a id="wa-footer" target
